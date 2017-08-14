@@ -220,6 +220,19 @@ body {
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media (min-width: 320px){
+  .navbar .navbar-nav {
+        display: block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+
+    .dropdown-menu{
+      text-align: center;
+    }
   /* Declare heights because of positioning of img element */
 
   .about-caption{
@@ -321,7 +334,8 @@ body {
 }
 
 @media (min-width: 768px) {
-  /* Navbar positioning foo */
+  /* Navbar positioning */
+
   .navbar-wrapper {
     margin-top: 20px;
   }
