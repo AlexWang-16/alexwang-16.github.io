@@ -1,0 +1,399 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #a5a5a5;
+}
+
+.display-table{
+  display: table;
+  table-layout:fixed;
+}
+
+.display-cell{
+  display: table-cell;
+  vertical-align:middle;
+  float:left;
+}
+
+.exp-container {
+  clear:both;
+  display: table;
+  table-layout:fixed;
+}
+
+.exp-left-column, .exp-right-column{
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.exp-left-column{
+  width: 25%;
+}
+
+.exp-right-column{
+  width: 75%;
+}
+
+.text-light {
+  color: #a5a5a5;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-bold {
+  font-weight:bold;
+}
+
+.text-underline{
+  text-decoration: underline;
+}
+
+.app-icon {
+  height:140px;
+  width:140px;
+}
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+#component-that-spies{
+  position:relative;
+
+  height:10px;
+  overflow-y: scroll;
+}
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+
+/* ABOUT ME SECTION
+-------------------------------------------------- */
+
+/* About-me base class */
+.about-me {
+  height: auto;
+  padding-top:35px;
+}
+/* Since positioning the image, we need to help out the caption */
+.about-text {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.about-me .item {
+  min-height:635px;
+  background-color: #414141;
+  padding-top:30px;
+  padding-bottom:20px;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+/* FEATURETTE SECTION
+-------------------------------------------------- */
+
+.featurette-divider {
+  /*margin: 80px 0;*/ /* Space out the Bootstrap <hr> more */
+  margin: 60px 0px;
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+.text-dark {
+  color: #555;
+}
+
+/* POLAROID SECTION
+-------------------------------------------------- */
+
+.polaroid p {
+  position: relative;
+  display:block;
+  font: 400 21px/1.4 'Kaushan Script', cursive;
+  text-align:center;
+  margin-bottom:10px;
+  bottom: 0px;
+  color: #000;
+}
+
+/* EVENTS SECTION
+-------------------------------------------------- */
+.event-item{
+    display: inline-block;
+    position: relative;
+    width: 350px;
+    height:350px;
+}
+
+.events-img{
+  height: 350px;
+  width: 350px;
+  border-radius: 4px;
+}
+
+.event-overlay{
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 350px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 350px;
+  border-radius: 3px;
+  opacity:0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+.event-text{
+  display: table-cell;
+   text-align: center;
+   vertical-align: middle;
+   font-size: 150%;
+}
+
+.event-item:hover .event-overlay{
+  opacity:0.85;
+}
+
+.link-dark:hover{
+  color: #3d3d3d;
+  text-decoration:underline;
+}
+
+.event-detail-caption{
+  font-weight:600;
+  font-size:1.3em;
+}
+
+.event-detail-date{
+  font-size:1.2em;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 320px){
+  /* Declare heights because of positioning of img element */
+
+  .about-caption{
+    margin-top:30px;
+  }
+  /* Bump up size of about-me content */
+  .about-caption p {
+    margin-top:20px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 1.45;
+    font-weight:300;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+
+  .polaroid{
+    position:relative;
+    margin-top:3%;
+    max-width:100%;
+  }
+
+  .polaroid p {
+    position: absolute;
+    font: 400 27px/1.4 'Kaushan Script', cursive;
+    min-width:480px;
+    text-align: center;
+    bottom: 0px;
+    color: #000;
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+  }
+
+  .polaroid img {
+    height:auto;
+    border:15px solid #fff;
+    border-bottom:55px solid #fff;
+    -webkit-box-shadow: 3px 3px 3px #777;
+    -moz-box-shadow: 3px 3px 3px #777;
+    box-shadow: 3px 3px 3px #777;
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+  }
+
+  .project{
+    color:#555;
+    margin-bottom: 70px;
+  }
+
+  .project:last-child{
+    margin-bottom:20px;
+  }
+
+  .project > h2, .exp-responsive-h2 {
+    font-size: 150%;
+  }
+
+  .featurette-alt-heading, .featurette-initial-alt-heading{
+    font-size:350%;
+    text-align:center;
+    margin-top:35px;
+    margin-bottom:35px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+
+  .featurette-initial-alt-heading{
+    margin: 75px 0px;
+  }
+
+  .featurette-sub-heading{
+    font-size:70%;
+  }
+
+  .exp-container {
+    display: block;
+  }
+
+  .exp-left-column, .exp-right-column{
+    display:block;
+    width:100%;
+  }
+
+  .event-h4{
+    font-size: 125%;
+    font-weight: 410;
+  }
+
+  .event-date{
+    color: #555;
+    font-weight:300;
+    font-size: 125%;
+    line-height:1.4;
+    margin-bottom:20px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  .project{
+    margin:45px 0px;
+  }
+
+  .project > h2, .exp-responsive-h2 {
+    font-size: 190%;
+  }
+
+  .featurette-initial-alt-heading{
+    text-align: initial;
+    font-size:50px;
+  }
+
+  .featurette-alt-heading{
+    text-align:initial;
+    font-size:50px;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .about-caption {
+    margin-top: 0px;
+  }
+
+  .featurette-heading {
+    margin-top: 120px;
+  }
+
+  .featurette-alt-heading{
+    margin-top:35px;
+  }
+
+  .exp-container {
+    display: table;
+    table-layout:fixed;
+  }
+
+  .exp-left-column, .exp-right-column{
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .exp-left-column{
+    width: 25%;
+  }
+
+  .exp-right-column{
+    width: 75%;
+  }
+}
+
+@media (min-width:1080px) {
+  .featurette-initial-alt-heading{
+    margin-bottom:15px;
+  }
+}
