@@ -220,6 +220,10 @@ body {
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media (min-width: 320px){
+  h1{
+    font-size:1.4em;
+  }
+
   .navbar .navbar-nav {
         display: block;
         float: none;
@@ -374,6 +378,9 @@ body {
 }
 
 @media (min-width: 992px) {
+  h1{
+    font-size:2.2em;
+  }
   .about-caption {
     margin-top: 0px;
   }
