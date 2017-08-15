@@ -107,7 +107,7 @@ body {
   min-height:635px;
   background-color: #414141;
   padding-top:30px;
-  padding-bottom:15px;
+  padding-bottom:20px;
 }
 
 
@@ -297,9 +297,10 @@ body {
   }
 
   .featurette-alt-heading, .featurette-initial-alt-heading{
-    font-size:310%;
-    padding-top:35px;
-    padding-bottom:35px;
+    font-size:350%;
+    text-align:center;
+    margin-top:35px;
+    margin-bottom:35px;
     font-weight: 400;
     line-height: 1;
     letter-spacing: -1px;
@@ -331,7 +332,7 @@ body {
     color: #555;
     font-weight:300;
     font-size: 125%;
-    line-height:1.6;
+    line-height:1.4;
     margin-bottom:20px;
   }
 }
@@ -364,16 +365,21 @@ body {
     font-size: 190%;
   }
 
-  .featurette-initial-alt-heading, .featurette-alt-heading{
+  .featurette-initial-alt-heading{
+    text-align: initial;
+    font-size:50px;
+  }
+
+  .featurette-alt-heading{
     text-align:initial;
-    font-size:220%;
+    font-size:50px;
   }
 
 }
 
 @media (min-width: 992px) {
   h1{
-    font-size:2.4em;
+    font-size:2.2em;
   }
   .about-caption {
     margin-top: 0px;
@@ -385,11 +391,6 @@ body {
 
   .featurette-alt-heading{
     margin-top:35px;
-  }
-
-  .featurette-initial-alt-heading, .featurette-alt-heading{
-    font-size:350%;
-    max-width:none;
   }
 
   .exp-container {
