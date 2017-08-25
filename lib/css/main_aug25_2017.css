@@ -8,7 +8,7 @@ body {
 }
 
 .container-fluid{
-  padding: 0;
+  padding: 0; /* THIS IS ONLY TO GET FULL WIDTH ARROUND YOUR HELLO!... TEXT */
 }
 
 .display-table{
