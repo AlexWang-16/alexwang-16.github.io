@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Alex's design studio">
     <meta name="author" content="Alex Wang">
@@ -37,33 +37,32 @@
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
                 <a class="navbar-brand" href="">alex wang</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#aboutMe">about me</a></li>
-                    <li><a href="#projects">projects</a></li>
-                    <li><a href="#experience">experience</a></li>
-                    <li><a href="#events">events</a></li>
-                    <li><a href="#technical_knowledge">technical knowledge</a></li>
+                    <li><a class="nav-link" href="#aboutMe">about me</a></li>
+                    <li><a class="nav-link" href="#projects">projects</a></li>
+                    <li><a class="nav-link" href="#experience">experience</a></li>
+                    <li><a class="nav-link" href="#events">events</a></li>
+                    <li><a class="nav-link" href="#technical_knowledge">technical knowledge</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">contact <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="https://github.com/AlexWang-16">github</a></li>
-                            <li><a href="mailto:alex.lik.wang@outlook.com?subject=">email</a></li>
-                            <li><a href="http://www.linkedin.com/in/alex-lh-wang">linkedin</a></li>
+                            <li><a class="nav-link" href="https://github.com/AlexWang-16">github</a></li>
+                            <li><a class="nav-link" href="mailto:alex.lik.wang@outlook.com?subject=">email</a></li>
+                            <li><a class="nav-link" href="http://www.linkedin.com/in/alex-lh-wang">linkedin</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
 
     <div id="aboutMe" class="about-me">
         <!-- Indicators -->
@@ -144,7 +143,7 @@
             <h2 class="featurette-alt-heading text-muted pull-right">Experience. <span class="text-light featurette-sub-heading">That expand the horizon.</span></h2>
             <div class="exp-container" style="">
                 <div class="exp-left-column" style="">
-                    <a href="https://hatchcanada.com"><img style="" class="featurette-image img-responsive center-block"  src="img/exp/hatch.png" width="160" height="160" alt="Hatch Canada"></a>
+                    <a href="https://hatchcoding.com"><img style="" class="featurette-image img-responsive center-block"  src="img/exp/hatch.png" width="160" height="160" alt="Hatch Canada"></a>
                 </div>
                 <div class="exp-right-column" style="">
                     <h2 class="text-dark exp-responsive-h2">Coach</h2>
@@ -218,7 +217,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="lib/js/jquery.js"><\/script>')</script>
     <script src="lib/js/bootstrap.min.js"></script>
-
+    <script src="lib/js/mobile_navbar.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="lib/js/ie10-viewport-bug-workaround.js"></script>
 
