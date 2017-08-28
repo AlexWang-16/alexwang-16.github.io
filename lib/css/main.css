@@ -178,6 +178,11 @@ body {
 
 /* EVENTS SECTION
 -------------------------------------------------- */
+.event-h2{
+  padding: 10px 0px 0px 0px;
+  font-size:135%;
+}
+
 .event-item{
     display: inline-block;
     position: relative;
@@ -190,7 +195,7 @@ body {
   width: 350px;
   border-radius: 4px;
 }
-1
+
 .event-text{
   display: table-cell;
    text-align: center;
