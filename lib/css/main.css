@@ -315,15 +315,14 @@ body {
   .featurette-alt-heading, .featurette-initial-alt-heading{
     font-size:350%;
     text-align:center;
-    margin-top:35px;
-    margin-bottom:35px;
+    padding-bottom:30px;
     font-weight: 400;
     line-height: 1;
     letter-spacing: -1px;
   }
 
   .featurette-initial-alt-heading{
-    margin: 75px 0px;
+    margin: 75px 0px 0px 0px;
   }
 
   .featurette-sub-heading{
@@ -398,14 +397,6 @@ body {
     margin-top: 0px;
   }
 
-  .featurette-heading {
-    margin-top: 120px;
-  }
-
-  .featurette-alt-heading{
-    margin-top:35px;
-  }
-
   .exp-container {
     display: table;
     table-layout:fixed;
@@ -428,7 +419,7 @@ body {
 
 @media (min-width:1080px) {
   .featurette-initial-alt-heading{
-    margin-bottom:15px;
+    margin-bottom:5px;
   }
 }
 
