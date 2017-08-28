@@ -7,6 +7,13 @@ body {
   color: #a5a5a5;
 }
 
+.welcome-text-lg{
+  font-weight:500;
+  font-size:260%;
+  line-height:0.9em;
+  padding: 25px 0px 0px 0px;
+}
+
 .container-fluid{
   padding: 0;
   overflow-x: hidden;
@@ -116,22 +123,27 @@ body {
 }
 
 
-/* MARKETING CONTENT
+/* PROJECTS SECTION
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
+.projects .col-lg-4 {
   margin-bottom: 20px;
   text-align: center;
 }
-.marketing h2 {
+.projects h2 {
   font-weight: normal;
 }
-.marketing .col-lg-4 p {
+.projects .col-lg-4 p {
   margin-right: 10px;
   margin-left: 10px;
 }
-/* FEATURETTE SECTION
+.project-item-title{
+    padding-top:20px;
+    font-weight:500;
+    font-size:150%;
+}
+/* FEATURETTE
 -------------------------------------------------- */
 
 .featurette-divider {
@@ -178,34 +190,12 @@ body {
   width: 350px;
   border-radius: 4px;
 }
-
-.event-overlay{
-  background: rgba(0,0,0,0.5);
-  color: white;
-  cursor: pointer;
-  display: table;
-  height: 350px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 350px;
-  border-radius: 3px;
-  opacity:0;
-  -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
-  -o-transition: opacity 500ms;
-  transition: opacity 500ms;
-}
-
+1
 .event-text{
   display: table-cell;
    text-align: center;
    vertical-align: middle;
    font-size: 150%;
-}
-
-.event-item:hover .event-overlay{
-  opacity:0.85;
 }
 
 .link-dark:hover{
@@ -214,7 +204,7 @@ body {
 }
 
 .event-detail-caption{
-  font-weight:600;
+  font-weight:400;
   font-size:1.3em;
 }
 
@@ -241,14 +231,14 @@ body {
   /* Declare heights because of positioning of img element */
 
   .about-caption{
-    margin-top:30px;
+    margin-top:15px;
   }
   /* Bump up size of about-me content */
   .about-caption p {
     margin-top:20px;
     margin-bottom: 25px;
     font-size: 20px;
-    line-height: 1.45;
+    line-height: 1.40;
     font-weight:300;
   }
 
@@ -326,7 +316,7 @@ body {
 
   .event-h4{
     font-size: 125%;
-    font-weight: 410;
+    font-weight: 400;
   }
 
   .event-date{
@@ -415,4 +405,18 @@ body {
   .featurette-initial-alt-heading{
     margin-bottom:15px;
   }
+}
+
+/* ACCESSIBILITY SUPPORT FEATURES
+-------------------------------------------------- */
+.offscreen
+{
+    position: absolute;
+    clip: rect(1px 1px 1px 1px); /* for Internet Explorer */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
 }

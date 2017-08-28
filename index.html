@@ -63,7 +63,7 @@
             </div>
         </div>
     </nav>
-
+    <main>
     <div id="aboutMe" class="about-me">
         <!-- Indicators -->
         <div class="container-fluid">
@@ -76,7 +76,7 @@
                                 <p>Alex Wang</p>
                             </div>
                             <div class="col-md-6 col-xs-12 about-caption">
-                                <h1>Hello!</h1>
+                                <div class="welcome-text-lg">Hello!</div>
                                 <p>Welcome to my design studio. I'm energized every morning tinkering away at new software projects.
                                     My goal in life is to build tools that enhance and simplify life.</p>
 
@@ -105,64 +105,63 @@
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container marketing">
-        <a id="projects"></a>
+    <div class="container projects">
 
-        <div class="row featurette">
-            <h1 class="featurette-initial-alt-heading text-muted">Projects. <span class="text-light featurette-sub-heading">That will blow your mind.</span></h1>
+        <section id="projects" class="row featurette">
+            <h1 class="offscreen">Projects. That will blow your mind</h1>
+            <h1 aria-hidden="true" class="featurette-initial-alt-heading text-muted">Projects. <span class="text-light featurette-sub-heading">That will blow your mind.</span></h1>
             <div class="col-lg-3 project text-center">
                 <a href="https://github.com/AlexWang-16/course-manager" class="text-dark link-dark"><img class="app-icon img-responsive center-block" src="img/project/course_manager.png" alt="">
-          <h3>Course Manager Application</h3></a>
+          <div class="project-item-title">Course Manager Application</div></a>
             </div>
             <!-- /.col-lg-3 -->
             <div class="col-lg-3 project text-center">
                 <a class="text-dark link-dark" href="https://github.com/AlexWang-16/araig-vr-suit-shell"><img class="app-icon img-responsive center-block" src="img/project/araig.png" alt="">
-          <h3>Virtual Reality Suit Interface Application</h3></a>
+          <div class="project-item-title">Virtual Reality Suit Interface Application</div></a>
             </div>
             <!-- /.col-lg-3 -->
             <div class="col-lg-3 project text-center">
                 <a class="text-dark link-dark" href="https://github.com/AlexWang-16/robo-command/"><img class="app-icon img-responsive center-block" src="img/project/robo_cmd.png" alt="">
-          <h3 class="text-center">Robo Command Application</h3></a>
+          <div class="project-item-title">Robo Command Application</div></a>
             </div>
             <!-- /.col-lg-3 -->
             <div class="col-lg-3 project text-center">
                 <a class="text-dark link-dark" href="https://github.com/AlexWang-16/bank-server-client-rmi"><img class="app-icon img-responsive center-block" src="img/project/java_rmi.png" alt="">
-          <h3 class="text-center">Bank server and user client using Java RMI</h3></a>
+          <div class="project-item-title">Bank server and user client using Java RMI</div></a>
             </div>
             <!-- /.col-lg-3 -->
-        </div>
+        </section>
         <!-- /.row -->
 
 
         <!-- EXPERIENCE-->
-        <a id="experience"></a>
-        <hr aria-hidden="true" class="featurette-divider">
+        <hr id ="experience" aria-hidden="true" class="featurette-divider">
 
-        <div class="featurette">
-            <h2 class="featurette-alt-heading text-muted pull-right">Experience. <span class="text-light featurette-sub-heading">That expand the horizon.</span></h2>
+        <section class="featurette">
+            <h1 class="offscreen">Experience. That expand the horizon.</h1>
+            <h1 aria-hidden="true" class="featurette-alt-heading text-muted pull-right">Experience. <span class="text-light featurette-sub-heading">That expand the horizon.</span></h1>
             <div class="exp-container" style="">
                 <div class="exp-left-column" style="">
                     <a href="https://hatchcanada.com"><img style="" class="featurette-image img-responsive center-block"  src="img/exp/hatch.png"  alt="Hatch Canada, a company that makes coding fun for kids in an inclusive community"></a>
                 </div>
-                <div class="exp-right-column" style="">
+                <article class="exp-right-column" style="">
                     <h2 class="text-dark exp-responsive-h2">Coach</h2>
                     <p class="lead text-dark">I assisted children ages 7 - 17 in their self-expression through computer generated visual arts. In the
                         process, they learn programming concepts such as loops, conditionals, variables, and object oriented
                         programming. These tools help them instruct the computer to realize their imagination. As a result,
                         children are motivated and feel a sense of empowerment in creating their master piece.
                     </p>
-                </div>
+                </article>
             </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.row -->
+            <!-- /.exp-container -->
+        </section>
+        <!-- END OF EXPERIENCE -->
 
-        <a id="events"></a>
-
-        <hr aria-hidden="true" class="featurette-divider">
+        <hr id="events" aria-hidden="true" class="featurette-divider">
 
         <div class="featurette">
-            <h2 class="featurette-alt-heading text-muted">Events. <span class="text-light featurette-sub-heading">That mark each milestone.</span></h2>
+          <h1 class="offscreen">Events. That mark each milestone.</h1>
+          <h1 aria-hidden="true" class="featurette-alt-heading text-muted">Events. <span class="text-light featurette-sub-heading">That mark each milestone.</span></h1>
             <div class="row">
                 <!--Modify col-md below to insert additional events.
             Add col-lg-6 when there's 2 events in a row.
@@ -174,17 +173,16 @@
                     <a class="text-dark link-dark" href="events/oscedays2017_hackathon.html">
                 <img class="img-rounded" alt="Lyofresh Team of seven members" src="img/events/06102017_hackathon_th.png">
 
-                <h4 aria-label="Open Source Circular Economy Days 2017 hackathon challenge" class="text-dark event-h4">OSCE Days 2017 Hackathon Challenge</h4></a>
+                <div aria-label="Open Source Circular Economy Days 2017 hackathon challenge" class="text-dark event-h2">OSCE Days 2017 Hackathon Challenge</div></a>
                 </div>
             </div>
         </div>
 
-        <a id="technical_knowledge"></a>
+        <hr id="technical_knowledge" aria-hidden="true" class="featurette-divider">
 
-        <hr aria-hidden="true" class="featurette-divider">
-
-        <div class="row featurette">
-            <h2 class="featurette-alt-heading text-muted pull-right">Technical Knowledge. <span class="text-light featurette-sub-heading">At a glance.</span></h2>
+        <section class="row featurette">
+          <h1 class="offscreen">Technical knolwedge. At a glance.</h1>
+          <h1 aria-hidden="true" class="featurette-alt-heading text-muted pull-right">Technical Knowledge. <span class="text-light featurette-sub-heading">At a glance.</span></h1>
             <div class="col-xs-12">
                 <p class="lead text-dark">Programming Languages: C, C++, Java, JavaScript, PHP, ASP.NET MVC 5, SQL (Microsoft, Oracle, MySQL).</p>
 
@@ -192,11 +190,11 @@
 
                 <p class="lead text-dark">My development tools: Git, GitHub, Visual Studio, XCode, Atom editor, Eclipse IDE.</p>
             </div>
-        </div>
+        </section>
 
         <hr aria-hidden="true" class="featurette-divider">
 
-        <!-- /END THE FEATURETTES -->
+        <!-- END OF CONTENT -->
 
 
         <!-- FOOTER -->
@@ -207,7 +205,7 @@
 
     </div>
     <!-- /.container -->
-
+  </main>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
