@@ -33,12 +33,12 @@
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" > <span class="sr-only">navigation toggle</span>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-haspopup="true"> <span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.html">alex wang</a>
+                <a role="banner" class="navbar-brand" href="../index.html">alex wang</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -48,7 +48,7 @@
                     <li><a href="../index.html#events">events</a></li>
                     <li><a href="../index.html#technical_knowledge">technical knowledge</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">contact <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">contact <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a class="nav-link" href="https://github.com/AlexWang-16">github</a></li>
                             <li><a class="nav-link" href="mailto:alex.lik.wang@outlook.com?subject=Greetings&nbsp;from&nbsp;alex-wang.me">email</a></li>
@@ -60,35 +60,38 @@
         </div>
     </nav>
 
-    <div style="padding-top:50px" class="container-fluid">
+    <figure class="container-fluid event-detail-figure">
       <img class="img-responsive center-block" src="../img/events/06102017_hackathon.png" alt="Lyofresh hackathon team of 7 members">
-    </div>
+      <figcaption class="event-detail-figcaption text-dark text-center event-detail-caption">
+        <p class="event-detail-caption">Open Source Circular Economy Days Hackathon Challenge team members and CEO Nicolas Steele</p>
+      </figcaption>
+    </figure>
 
-    <article class="container">
+    <div class="container">
+      <article>
+        <h1 class="text-dark event-detail-h1">Lyofresh hackathon team wins third place!</h1>
 
-      <div style="margin-top:10px" class="text-dark text-center">
-        <p class="event-detail-caption">Open Source Circular Economy Days Hackathon Challenge</p>
-      </div>
+        <p>June 10, 2017</p>
 
-      <h2 style="margin-top:30px;"class="text-dark">Lyofresh hackathon team wins third place!</h2>
+        <div class="sr-only">The open source circular economy days hackathon was hosted by food systems lab in efforts to reduce food waste in Toronto's food industry. We worked closely with Nicolas Steele, CEO of LyoFresh Technologies to help convey the benefits of his innovative freeze dry technology and his mission to reduce world hunger and food waste.
+        </div>
 
-      <p>June 10, 2017</p>
-
-      <div style="margin-top:17px" class="lead">
-      This hackathon was hosted by <a class=" text-dark link-dark" href="https://foodsystemslab.ca">Food Systems Lab</a> in efforts to reduce food waste in Toronto's food industry. We worked closely with Nicholas Steele, CEO of LyoFresh Technologies to help convey the benefits of his innovative freeze dry technology and his mission to reduce world hunger and food waste.
-      </div>
-      <div class="lead">
+        <p aria-hidden="true" style="margin-top:17px" class="lead">
+      The open source circular economy days hackathon was hosted by <a class=" text-dark link-dark" href="https://foodsystemslab.ca">Food Systems Lab</a> in efforts to reduce food waste in Toronto's food industry. We worked closely with Nicholas Steele, CEO of LyoFresh Technologies to help convey the benefits of his innovative freeze dry technology and his mission to reduce world hunger and food waste.
+        </p>
+        <p class="lead">
       I worked on the design of the website to create a delightful experience for visitors. Together, we learned the importance of team work, strategic planning, and task delegation. To our surprise, our hard work and pitch resulted in our team being awarded third place on our very first hackathon!
-      </div>
+        </p>
 
+      </article><!-- /.container -->
     <hr class="featurette-divider" aria-hidden="true">
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="../index.html#events">Back to events</a></p>
         <p>&copy; 2017 Alex Wang</p>
       </footer>
+    </div> <!-- END OF CONTAINER-->
 
-    </article><!-- /.container -->
       <!-- Bootstrap core JavaScript
       ================================================== -->
       <!-- Placed at the end of the document so the pages load faster -->

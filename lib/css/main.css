@@ -209,12 +209,32 @@ body {
 }
 
 .event-detail-caption{
-  font-weight:400;
-  font-size:1.3em;
+  letter-spacing:0.03em;
+  font-weight:300;
+  font-size:0.9em;
+  color:#8c8c8c;
+  margin-bottom:0px;
+  padding-bottom:0px;
 }
 
 .event-detail-date{
   font-size:1.2em;
+}
+
+.event-detail-h1{
+  font-size: 1.9em;
+}
+
+.event-detail-figcaption{
+  padding-top:2px;
+}
+
+.event-detail-figure{
+  padding-top:50px;
+}
+
+.event-detail-initial-description{
+  padding-top:7px;
 }
 
 /* RESPONSIVE CSS
@@ -414,14 +434,3 @@ body {
 
 /* ACCESSIBILITY SUPPORT FEATURES
 -------------------------------------------------- */
-.offscreen
-{
-    position: absolute;
-    clip: rect(1px 1px 1px 1px); /* for Internet Explorer */
-    clip: rect(1px, 1px, 1px, 1px);
-    padding: 0;
-    border: 0;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-}
