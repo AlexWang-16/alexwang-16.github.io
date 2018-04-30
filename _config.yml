@@ -1,0 +1,5 @@
+name: Alex's Adventures
+markdown: kramdown
+timezone: America/New_York
+baseurl: /blog
+permalink: pretty
