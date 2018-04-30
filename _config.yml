@@ -1,5 +1,5 @@
-name: Alex's Adventures
+title: Alex's Adventures
 markdown: kramdown
 timezone: America/New_York
-baseurl: /blog
+#baseurl: /blog
 permalink: pretty
