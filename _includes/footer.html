@@ -1,0 +1,13 @@
+<footer>
+  {% if include.section %}
+    <p class="pull-right"><a href="/#{{ include.section}}">Back to {{ include.section }}</a></p>
+  {% else %}
+    <p class="pull-right"><a href="#">Back to top</a></p> 
+  {% endif %}
+  <p>&copy; 
+    <script>
+      let year = new Date().getUTCFullYear();
+      document.write(year);
+    </script> 
+   Alex Wang</p>
+</footer>
