@@ -1,0 +1,16 @@
+---
+layout: default
+section: events
+---
+    <figure class="container-fluid event-detail-figure" aria-labelledby="{{ page.aria-figcaption }}">
+      <img class="img-responsive center-block" src="{{ page.headline-image-src | relative_url }}">
+      <figcaption id="{{ page.aria-figcaption }}" class="event-detail-figcaption text-dark text-center event-detail-caption">
+        <p class="event-detail-caption text-dark">{{ page.image-caption }}</p>
+      </figcaption>
+    </figure>
+    <div class="container">
+      <article>
+        <h1 class="text-dark event-detail-h1">{{ page.headline }}</h1>
+        <p>{{ page.date | date: "%B %e, %Y %I:%M %P" }}</p>
+        {{ content }}
+      </article>

@@ -11,10 +11,17 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#aboutMe">about me</a></li>
-                <li><a href="#projects">projects</a></li>
-                <li><a href="#experience">experience</a></li>
-                <li><a href="#events">events</a></li>
+                {% if include.section %}
+                    <li><a href="{{ "#aboutMe" | relative_url }}">about me</a></li>
+                    <li><a href="{{ "#projects" | relative_url }}">projects</a></li>
+                    <li><a href="{{ "#experience" | relative_url}}">experience</a></li>
+                    <li {% if include.section == 'events' %} class="active" {% endif %}><a href="{{ "#events" | relative_url }}">events</a></li>
+                {% else %}
+                    <li><a href="#aboutMe">about me</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#experience">experience</a></li>
+                    <li><a href="#events">events</a></li> 
+                {% endif %}
                 <li><a href="https://github.com/alexwang-16">github</a></li>
                 <li><a href="https://alexopensource.wordpress.com/">blog</a></li>
                 <li class="dropdown">
