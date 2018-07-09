@@ -5,7 +5,7 @@ description: My very first blog post on my own website!
 headline: A brand new beginning
 aria-figcaption: 
 image-caption: 
-headline-image-src: "img/posts/2018-01-22-beginning.jpg"
+headline-image-src: "img/posts/20180122.jpg"
 date: Jan 22, 2018 10:47 pm
 ---
 
