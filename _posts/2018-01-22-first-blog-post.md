@@ -9,6 +9,7 @@ headline-image-src:
 date: Jan 22, 2018 10:47 pm
 ---
 
+<p class="lead">
 My open-source journey begins here. Yes, without even writing a single line of code. This blog is dedicated to documenting each adventure I undertake as I dive into the world of open-source.
 
 In fact, up until this moment, I've never used Wordpress before and I'm already impressed at how easy, yet customizable this platform is. So sit back as you watch me ride through the highs and lows while attempting to make the world a better place.
@@ -18,3 +19,4 @@ I'm currently a third year student at Seneca College learning to become a useful
 I hope you will find the things I've learned useful for you in solving the problems you encounter.
 
 Cheers to a brighter future.
+</p>
