@@ -25,14 +25,12 @@
     {% include navbar.html %}
   {% endif %}
     <main>
-        {{ content }}
+      {{ content }}
+      <div class="container">
         <hr aria-hidden="true" class="featurette-divider">
-        {% if layout.section %}
-          {% include footer.html section=layout.section %}
-        {% else %}
-          {% include footer.html %}
-        {% endif %}
-  </main>
+        {% include footer.html %}
+      </div>
+    </main>
     <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
