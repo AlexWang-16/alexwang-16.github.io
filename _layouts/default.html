@@ -10,13 +10,14 @@
     <meta name="author" content="{{ site.author }}">
     <link rel="icon" href="{{ "img/logo/logo_10062017.png" | relative_url }}">
     <link rel="apple-touch-icon-precomposed" href="{{ "img/logo/apple-touch-icon-precomposed_10142017.png" | relative_url }}">
-
     <title>{{ page.title }}</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ "lib/css/main.css" | relative_url }}" rel="stylesheet">
+    {% if layout.cssFile %}
+      <link href="{{ "lib/css/" | append: layout.section | append: ".css" | relative_url }}" rel="stylesheet"> 
+    {% endif %}
     <link href="{{ "lib/css/ie10-viewport-bug-workaround.css" | relative_url }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
-
   </head>
 <body data-spy="scroll" data-target=".navbar-collapse">
   {% if layout.section %}
@@ -28,7 +29,15 @@
       {{ content }}
       <div class="container">
         <hr aria-hidden="true" class="featurette-divider">
-        {% include footer.html %}
+        {% if layout.section %}
+          {% if layout.section-name %}
+            {% include footer.html section=layout.section section-name=layout.section-name %}
+          {% else %}
+            {% include footer.html section=layout.section %}
+          {% endif %}
+        {% else %}
+          {% include footer.html %}
+        {% endif %}
       </div>
     </main>
     <script

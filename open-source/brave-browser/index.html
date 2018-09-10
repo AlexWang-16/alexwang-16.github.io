@@ -1,0 +1,12 @@
+---
+title: Contributions to Brave browser
+layout: opensource
+project-name: Brave Browser
+project-description: A modern privacy conscious browser that works as good as Google Chrome.
+---
+
+{% for entry in site.data.opensource-brave-browser %}
+  <li> 
+    <a href="{{ entry.link }}">[{{ entry.date }}]: {{ entry.name }}</a>
+  </li>
+{% endfor %}
