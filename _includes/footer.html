@@ -1,6 +1,10 @@
 <footer>
   {% if include.section %}
-    <p class="pull-right"><a href="/#{{ include.section}}">Back to {{ include.section }}</a></p>
+    {% if include.section-name %}
+      <p class="pull-right"><a href="/#{{ include.section}}">Back to {{ include.section-name }}</a></p>
+    {% else %}
+      <p class="pull-right"><a href="/#{{ include.section}}">Back to {{ include.section }}</a></p> 
+    {% endif %}
   {% else %}
     <p class="pull-right"><a href="#">Back to top</a></p> 
   {% endif %}

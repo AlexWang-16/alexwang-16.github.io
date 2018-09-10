@@ -1,0 +1,12 @@
+---
+title: Contributions to Firefox Debugger
+layout: opensource
+project-name: Firefox Debugger
+project-description: A JavaScript Debugger created by the Mozilla team that enables you to step through JavaScript code, examine variables and troubleshoot errors.
+---
+
+{% for entry in site.data.opensource-firefox-debugger %}
+  <li> 
+    <a href="{{ entry.link }}">[{{ entry.date }}]: {{ entry.name }}</a>
+  </li>
+{% endfor %}

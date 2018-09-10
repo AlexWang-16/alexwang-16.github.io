@@ -9,7 +9,7 @@ headline-image-src: "img/posts/2018-01-22-beginning.jpg"
 date: Jan 22, 2018 10:47 pm
 ---
 
-<div class="">
+<div>
 
 My open-source journey begins here. Yes, without even writing a single line of code. This blog is dedicated to documenting each adventure I undertake as I dive into the world of open-source.<br><br>
 

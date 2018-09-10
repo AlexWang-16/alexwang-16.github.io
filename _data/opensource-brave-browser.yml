@@ -1,0 +1,3 @@
+- name: Fix behavior of empty space in URI
+  date: April 2018
+  link: https://alexopensource.wordpress.com/2018/04/05/fix-url-issues-with-brave-browser-using-test-driven-development/
