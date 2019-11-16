@@ -3,15 +3,17 @@
     {% if include.section-name %}
       <p class="pull-right"><a href="/#{{ include.section}}">Back to {{ include.section-name }}</a></p>
     {% else %}
-      <p class="pull-right"><a href="/#{{ include.section}}">Back to {{ include.section }}</a></p> 
+      <p class="pull-right"><a href="/#{{ include.section}}">Back to {{ include.section }}</a></p>
     {% endif %}
   {% else %}
-    <p class="pull-right"><a href="#">Back to top</a></p> 
+    <p class="pull-right"><a href="#">Back to top</a></p>
   {% endif %}
-  <p>&copy; 
+  <p>&copy;
     <script>
       let year = new Date().getUTCFullYear();
       document.write(year);
-    </script> 
-   Alex Wang</p>
+    </script>
+    Alex Wang |
+    <a href="credits.html">Credits</a>
+  </p>
 </footer>
