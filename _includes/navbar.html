@@ -12,11 +12,13 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 {% if include.section %}
-                    <li><a href="{{ "#aboutMe" | relative_url }}">about me</a></li>
-                    <li><a href="{{ "#projects" | relative_url }}">projects</a></li>
-                    <li><a href="{{ "#open-source" | relative_url }}">open source</a></li>
-                    <li><a href="{{ "#experience" | relative_url}}">experience</a></li>
-                    <li {% if include.section == 'events' %} class="active" {% endif %}><a href="{{ "#events" | relative_url }}">events</a></li>
+                    <li><a href="{{ "/#aboutMe" | absolute_url }}">about me</a></li>
+                    <li><a href="{{ "/#projects" | absolute_url }}">projects</a></li>
+                    <li><a href="{{ "/#open-source" | absolute_url }}">open source</a></li>
+                    <li><a href="{{ "/#experience" | absolute_url }}">experience</a></li>
+                    {% if include.section == 'events' %}
+                      <li {% unless include.no-navbar-highlight %} class="active" {% endunless %} ><a href="{{ "/#events" | absolute_url }}">events</a></li>
+                    {% endif %}
                 {% else %}
                     <li><a href="#aboutMe">about me</a></li>
                     <li><a href="#projects">projects</a></li>

@@ -22,6 +22,8 @@
 <body data-spy="scroll" data-target=".navbar-collapse">
   {% if layout.section %}
     {% include navbar.html section=layout.section %}
+  {% elsif page.section %}
+    {% include navbar.html section=page.section no-navbar-highlight=page.no-navbar-highlight %}
   {% else %}
     {% include navbar.html %}
   {% endif %}
