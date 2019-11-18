@@ -14,7 +14,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ "lib/css/main.css" | relative_url }}" rel="stylesheet">
     {% if layout.cssFile %}
-      <link href="{{ "lib/css/" | append: layout.section | append: ".css" | relative_url }}" rel="stylesheet"> 
+      <link href="{{ "lib/css/" | append: layout.section | append: ".css" | relative_url }}" rel="stylesheet">
     {% endif %}
     <link href="{{ "lib/css/ie10-viewport-bug-workaround.css" | relative_url }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
@@ -34,6 +34,10 @@
             {% include footer.html section=layout.section section-name=layout.section-name %}
           {% else %}
             {% include footer.html section=layout.section %}
+          {% endif %}
+        {% elsif page.section %}
+          {% if page.section-name %}
+            {% include footer.html section=page.section section-name=page.section-name %}
           {% endif %}
         {% else %}
           {% include footer.html %}
