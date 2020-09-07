@@ -1,0 +1,18 @@
+---
+layout: default
+section: open-source
+section-name: open source
+cssFile: true
+title: page.title
+---
+
+<div class="spaceout-navbar container">
+  <h1>{{ page.project-name }}</h1>
+  <p>{{ page.project-description }}</p>
+  <section class="contribution-container">
+    <h2>My Contributions</h2>
+    <ul>
+      {{ content }}
+    </ul>
+  </section>
+</div>

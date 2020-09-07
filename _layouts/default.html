@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    {% endif %}
+    <meta name="author" content="{{ site.author }}">
+    <link rel="icon" href="{{ "img/logo/logo_10062017.png" | relative_url }}">
+    <link rel="apple-touch-icon-precomposed" href="{{ "img/logo/apple-touch-icon-precomposed_10142017.png" | relative_url }}">
+    <title>{{ page.title }}</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ "lib/css/main.css" | relative_url }}" rel="stylesheet">
+    {% if layout.cssFile %}
+      <link href="{{ "lib/css/" | append: layout.section | append: ".css" | relative_url }}" rel="stylesheet">
+    {% endif %}
+    <link href="{{ "lib/css/ie10-viewport-bug-workaround.css" | relative_url }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+  </head>
+<body data-spy="scroll" data-target=".navbar-collapse">
+  {% if layout.section %}
+    {% include navbar.html section=layout.section %}
+  {% elsif page.section %}
+    {% include navbar.html section=page.section no-navbar-highlight=page.no-navbar-highlight %}
+  {% else %}
+    {% include navbar.html %}
+  {% endif %}
+    <main>
+      {{ content }}
+      <div class="container">
+        <hr aria-hidden="true" class="featurette-divider">
+        {% if layout.section %}
+          {% if layout.section-name %}
+            {% include footer.html section=layout.section section-name=layout.section-name %}
+          {% else %}
+            {% include footer.html section=layout.section %}
+          {% endif %}
+        {% elsif page.section %}
+          {% if page.section-name %}
+            {% include footer.html section=page.section section-name=page.section-name %}
+          {% endif %}
+        {% else %}
+          {% include footer.html %}
+        {% endif %}
+      </div>
+    </main>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="{{ "lib/js/mobile_navbar.js" | relative_url }}"></script>
+    <script src="{{ "lib/js/ie10-viewport-bug-workaround.js" | relative_url }}"></script>
+  </body>
+</html>
