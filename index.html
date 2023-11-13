@@ -27,9 +27,10 @@ description: Alex's design studio
                 </div>
                 <div class="col-md-6 col-xs-12 about-caption">
                     <div class="welcome-text-lg">Hi, I'm Alex.</div>
-                    <p>I'm a cloud operations engineer at Municipal Property Assessment Corporation (MPAC) working with Kubernetes, AWS, GitLab CICD, and Terraform.
-                        My goal in life is to build tools that enhance humanity and simplify life.</p>
-                    <p>I'm a coffee connoisseur, enjoy nature walks, and have recently taken on Volleyball!</p>
+                    <p>I'm a senior developer at RBCx working with AWS, CircleCI CICD, and developing web applications
+                        using Vite, ReactJS, Tailwind CSS. My goal in life is to build tools that enhance humanity and
+                        simplify life.</p>
+                    <p>I'm a coffee connoisseur, enjoy nature walks, and enjoy playing Volleyball!</p>
                     <p>
                         I'm an avid believer in constant learning. My motto is
                         "be curious, always".
@@ -97,16 +98,34 @@ description: Alex's design studio
             <span class="text-light featurette-sub-heading">Expanding the horizon.</span>
         </h1>
         <div class="exp-container padding-bottom-40px">
+            <div class="exp-left-column">
+                <a href="https://rbcx.com"><img class="featurette-image img-responsive center-block"
+                        src="img/exp/rbcx_11132023.svg"
+                        alt="RBCx, helping tech companies scale and make an impact on the world by connecting them to the right people, ideas, and financial solutions of one of Canada’s largest banks."></a>
+            </div>
+            <article class="exp-right-column">
+                <h2 class="text-dark exp-responsive-h2">Senior Software Developer</h2>
+                <p class="text-light">May 2023 - Present</p>
+                <p class="text-dark">As a Senior Developer on the Venture Shared Services team, I work with projects that
+                    involved AWS, ReactJS, Tailwind CSS, and TypeScript.
+                <p class="text-dark"> To streamline deployments to staging environment, I've created a CircleCI CICD pipeline
+                    that deploys a ReactJS project into AWS S3 and performing invalidation on the AWS CloudFront Distribution.</p>
+                <p class="text-dark">Driven by business requirements to keep the cost of web applications low without sacraficing reliability and performance, I utilize serverless AWS technologies
+                    such as AWS S3, CloudFront Distribution, and AWS SQS to minimize operation costs, maintaining scalability and performance, and paying only for the required compute, storage, and networking to serve customers.
+                </p>
+            </article>
+        </div>
+        <div class="exp-container padding-bottom-40px">
           <div class="exp-left-column">
             <a href="https://mpac.ca"><img  class="featurette-image img-responsive center-block"  src="img/exp/mpac_07112020.png"  alt="Municipal Property Assessment Corporation, Ontario's property expert."></a>
           </div>
             <article class="exp-right-column">
               <h2 class="text-dark exp-responsive-h2">Cloud Operations Engineer</h2>
-              <p class="text-light">November 2021 - Present</p>
-              <p class="lead text-dark">As a Cloud Operations Engineer on the special projects team, I've worked with GitLab runners and CICD pipelines to support the build and deployment processes. In particular, I've configured <a href="https://github.com/catalinpan/aws-ecr-proxy">ECR proxy</a> on an EKS cluster to allow CICD pipelines to pull docker images from a private ECR repository without login credentials for streamlined and secure deployment.</p>
-              <p class="lead text-dark"> To streamline CICD deployments for faster execution and allow easier troubleshooting, I've created a custom docker image that has deployment tools preinstalled to elminate time spent in downloading software per execution, reduce network usage, and amount of logs produced to allow errors to easily surface for corrective action.</p>
-              <p class="lead text-dark">Using Terraform, I've automated creation of WAFs for AWS Application Load Balancers that protect applications and web services deployed in EKS cluster allowing improved consistency, tracking code changes over time, and the ability to easily recover from failures.</p>
-              <p class="lead text-dark">To enable applications in EKS to gain access to AWS resources and services, I've configured <a href="https://github.com/jtblin/kube2iam">Kube2IAM</a> to allow application pods to link with IAM roles that grant permissions tailored for the application.</p>
+              <p class="text-light">November 2021 - May 2023</p>
+              <p class="text-dark">As a Cloud Operations Engineer on the special projects team, I've worked with GitLab runners and CICD pipelines to support the build and deployment processes. In particular, I've configured <a href="https://github.com/catalinpan/aws-ecr-proxy">ECR proxy</a> on an EKS cluster to allow CICD pipelines to pull docker images from a private ECR repository without login credentials for streamlined and secure deployment.</p>
+              <p class="text-dark"> To streamline CICD deployments for faster execution and allow easier troubleshooting, I've created a custom docker image that has deployment tools preinstalled to elminate time spent in downloading software per execution, reduce network usage, and amount of logs produced to allow errors to easily surface for corrective action.</p>
+              <p class="text-dark">Using Terraform, I've automated creation of WAFs for AWS Application Load Balancers that protect applications and web services deployed in EKS cluster allowing improved consistency, tracking code changes over time, and the ability to easily recover from failures.</p>
+              <p class="text-dark">To enable applications in EKS to gain access to AWS resources and services, I've configured <a href="https://github.com/jtblin/kube2iam">Kube2IAM</a> to allow application pods to link with IAM roles that grant permissions tailored for the application.</p>
             </article>
         </div>
         <div class="exp-container padding-bottom-40px">
@@ -118,11 +137,11 @@ description: Alex's design studio
             <article class="exp-right-column">
               <h2 class="text-dark exp-responsive-h2">Systems Developer</h2>
               <p class="text-light">July 2021 - October 2021</p>
-              <p class="lead text-dark">As a Systems Developer on the data visualization team, I've updated the Municipal Connect application's administrative web console when enroling consultants using TypeScript, React.JS, and Redux. </p>
-              <p class="lead text-dark">Using React-Testing-Library, I've added numerous unit tests to the React applicatios built on a microfrontend architecture and being the test driven development advocate on the team.</p>
-              <p class="lead text-dark">To support enhanced password reset functionality, I've created an account verification web service using AWS API Gateway, CloudFront, and WAF. In addition, I've worked on the password reset page using JQuery to utilize the account verification web service.</p>
-              <p class="lead text-dark">Using terraform, I've written code that will provision all AWS resources required related to account verification web service to allow tracking infrastructure changes over time and to be able to easily recover from failure within minutes.</p>
-              <p class="lead text-dark">I've worked with GitLab CICD pipelines to support the build and deployment processes. In addition, I've addressed dependency vulnerabilities discovered by Blackduck scanner executed in the pipeline.</p>
+              <p class="text-dark">As a Systems Developer on the data visualization team, I've updated the Municipal Connect application's administrative web console when enroling consultants using TypeScript, React.JS, and Redux. </p>
+              <p class="text-dark">Using React-Testing-Library, I've added numerous unit tests to the React applicatios built on a microfrontend architecture and being the test driven development advocate on the team.</p>
+              <p class="text-dark">To support enhanced password reset functionality, I've created an account verification web service using AWS API Gateway, CloudFront, and WAF. In addition, I've worked on the password reset page using JQuery to utilize the account verification web service.</p>
+              <p class="text-dark">Using terraform, I've written code that will provision all AWS resources required related to account verification web service to allow tracking infrastructure changes over time and to be able to easily recover from failure within minutes.</p>
+              <p class="text-dark">I've worked with GitLab CICD pipelines to support the build and deployment processes. In addition, I've addressed dependency vulnerabilities discovered by Blackduck scanner executed in the pipeline.</p>
               </p>
             </article>
         </div>
@@ -135,12 +154,12 @@ description: Alex's design studio
           <article class="exp-right-column">
               <h2 class="text-dark exp-responsive-h2">Cloud Operations Analyst</h2>
               <p class="text-light">January 2020 - July 2021</p>
-              <p class="lead text-dark">As a Cloud Operations Analyst, I worked with AWS IAM, EC2, Secrets Manager, Lex, SQS, S3, Lambda, CloudWatch to automate operations workflows such as standardizing EC2 instance tags.</p>
-              <p class="lead text-dark">By creating Data Dog HTTP checks, I've contributed to the team's visibility of application and service availability.</p>
-              <p class="lead text-dark">To enhance efficency of file restores in AWS S3, I created a web application using Bootstrap, React, Python Sanic, and AWS Boto3 SDK to allow support staff to perform on demand file restoration. This reduced customer turn around time from a few days to just 15 minutes.</p>
-              <p class="lead text-dark">Working with the security team, I've created an AWS Lambda script in python that automated the creation of VPC traffic mirroring sessions.<p>
-              <p class="lead text-dark">To automate infrastructure deployments using infrastructure as code, I used Terraform CLI and scripts and experimented with Terragrunt and Terraspace.<p>
-              <p class="lead text-dark">I've recently worked on prototyping a chatbot for the team using AWS Lex, providing users with information on the on call personnel. As a result of this development, I've forked, enhanced, and published my very first NPM Project, <a href="https://github.com/AlexWang-16/react-lex-plus">react-lex-plus</a>.</p>
+              <p class="text-dark">As a Cloud Operations Analyst, I worked with AWS IAM, EC2, Secrets Manager, Lex, SQS, S3, Lambda, CloudWatch to automate operations workflows such as standardizing EC2 instance tags.</p>
+              <p class="text-dark">By creating Data Dog HTTP checks, I've contributed to the team's visibility of application and service availability.</p>
+              <p class="text-dark">To enhance efficency of file restores in AWS S3, I created a web application using Bootstrap, React, Python Sanic, and AWS Boto3 SDK to allow support staff to perform on demand file restoration. This reduced customer turn around time from a few days to just 15 minutes.</p>
+              <p class="text-dark">Working with the security team, I've created an AWS Lambda script in python that automated the creation of VPC traffic mirroring sessions.<p>
+              <p class="text-dark">To automate infrastructure deployments using infrastructure as code, I used Terraform CLI and scripts and experimented with Terragrunt and Terraspace.<p>
+              <p class="text-dark">I've recently worked on prototyping a chatbot for the team using AWS Lex, providing users with information on the on call personnel. As a result of this development, I've forked, enhanced, and published my very first NPM Project, <a href="https://github.com/AlexWang-16/react-lex-plus">react-lex-plus</a>.</p>
               </p>
           </article>
         </div>
@@ -151,10 +170,10 @@ description: Alex's design studio
             <article class="exp-right-column">
                 <h2 class="text-dark exp-responsive-h2">DevOps Engineer (Coop)</h2>
                 <p class="text-light">January 2019 - August 2019</p>
-                <p class="lead text-dark">As a DevOps engineer at Healthcare of Ontario Pension Plan's investment securities cloud team, I worked with AWS CloudFormation templates and PowerShell scripts to automate the provisioning developer virtual machines in the cloud and the installation of softwares.</p>
-                <p class="lead text-dark">To promote self-service among teams, I integrated the CloudFormation template with AWS Service Catalog such that teams can provision virtual machine instances themselves.</p>
-                <p class="lead text-dark">I've also written a PowerShell script that assisted developers in migrating from Oracle JDK to Amazon Corretto Open JDK and JRE.<p>
-                <p class="lead text-dark">To standardize the deployment of Amazon Simple System Manager across AWS EC2 instances and migrated data center virtual machines, I wrote a python script using AWS Boto3 SDK to detect and update Simple System Manager clients and performed manual installation for instances that did not have the manager installed on Linux and Windows instances.</p>
+                <p class="text-dark">As a DevOps engineer at Healthcare of Ontario Pension Plan's investment securities cloud team, I worked with AWS CloudFormation templates and PowerShell scripts to automate the provisioning developer virtual machines in the cloud and the installation of softwares.</p>
+                <p class="text-dark">To promote self-service among teams, I integrated the CloudFormation template with AWS Service Catalog such that teams can provision virtual machine instances themselves.</p>
+                <p class="text-dark">I've also written a PowerShell script that assisted developers in migrating from Oracle JDK to Amazon Corretto Open JDK and JRE.<p>
+                <p class="text-dark">To standardize the deployment of Amazon Simple System Manager across AWS EC2 instances and migrated data center virtual machines, I wrote a python script using AWS Boto3 SDK to detect and update Simple System Manager clients and performed manual installation for instances that did not have the manager installed on Linux and Windows instances.</p>
                 </p>
             </article>
         </div>
@@ -165,9 +184,9 @@ description: Alex's design studio
             <article class="exp-right-column">
                 <h2 class="text-dark exp-responsive-h2">Full Stack and Mobile Developer (Coop)</h2>
                 <p class="text-light">May 2018 - August 2018</p>
-                <p class="lead text-dark">On their backend, I worked with PHP codeigniter framework and MySQL database to enable API support for their next generation mobile application tested with PHPUnit.
+                <p class="text-dark">On their backend, I worked with PHP codeigniter framework and MySQL database to enable API support for their next generation mobile application tested with PHPUnit.
                 </p>
-                <p class="lead text-dark">On the front end, I developed new features as such deep linking for their next generation mobile application for iOS and Android using React-Native, Axios, and Redux library to enable corporate employees to track and engage in fitness activities, reduce health risks, and be mindful in living healthier lives!</p>
+                <p class="text-dark">On the front end, I developed new features as such deep linking for their next generation mobile application for iOS and Android using React-Native, Axios, and Redux library to enable corporate employees to track and engage in fitness activities, reduce health risks, and be mindful in living healthier lives!</p>
             </article>
         </div>
         <div class="exp-container padding-bottom-40px">
@@ -177,7 +196,7 @@ description: Alex's design studio
             <article class="exp-right-column">
                 <h2 class="text-dark exp-responsive-h2">Admin Coach</h2>
                 <p class="text-light">April 2018 - December 2018</p>
-                <p class="lead text-dark"> As an admin coach, I perform all the duties of a coach. In addition, I organized the delivery of lessons delivered to students. I communicate with parents on a frequent basis on the progress of their child and work collaboratively to address behavioral issues.
+                <p class="text-dark"> As an admin coach, I perform all the duties of a coach. In addition, I organized the delivery of lessons delivered to students. I communicate with parents on a frequent basis on the progress of their child and work collaboratively to address behavioral issues.
                 </p>
             </article>
         </div>
@@ -190,7 +209,7 @@ description: Alex's design studio
             <article class="exp-right-column">
                 <h2 class="text-dark exp-responsive-h2">Coach</h2>
                 <p class="text-light">January 2017 - December 2018</p>
-                <p class="lead text-dark">I assisted children ages 7 - 17 in their self-expression through computer generated visual arts. In the
+                <p class="text-dark">I assisted children ages 7 - 17 in their self-expression through computer generated visual arts. In the
                     process, they learn programming concepts such as loops, conditionals, variables, and object oriented
                     programming. These tools help them instruct the computer to realize their imagination. As a result,
                     children are motivated and feel a sense of empowerment in creating their master piece.
