@@ -1,0 +1,7 @@
+- name: Add unit test for pause on next
+  date: April 2018
+  link: https://alexopensource.wordpress.com/2018/04/22/pr-debugger-html-add-a-test-for-pause-on-next-mochitest/
+
+- name: Fix quick open selected text styling
+  date: March 2018
+  link: https://alexopensource.wordpress.com/2018/03/25/pr-mozilla-devtools-debugger-html-quick-open-style-selected-matches/
