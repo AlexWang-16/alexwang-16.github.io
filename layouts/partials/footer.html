@@ -1,0 +1,41 @@
+<div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+
+  <div class="flex flex-wrap space-y-6 mb-4">
+
+    <div class="w-full md:w-3/5 flex flex-col space-y-4 md:pr-8 lg:pr-10">
+
+      <a class="flex items-center group" href="{{ .Site.BaseURL }}">
+
+        <img style="height:auto; width:auto; max-height:25px; max-width:25px;" src="/images/logo/logo_10062017.png">
+
+        <span class="ml-2 text-2xl font-semibold uppercase">{{ .Site.Title }}</span>
+      </a>
+
+      <p>
+        Written with coffee and love.<br>Designed for humanity.
+      </p>
+    </div>
+
+    <div class="self-center flex flex-col w-full md:w-2/5">
+
+{{ partial "content/social-media.html" . }}
+
+    </div>
+
+  </div>
+
+  <div class="my-8">
+    <ul class="flex items-center space-x-4">
+      {{ range .Site.Menus.main }}
+        <li><a class="decoration-auto hover:underline font-semibold" href="{{ .URL }}">{{ .Name }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+
+  <div class="border-t pt-4">
+
+    <p class="text-sm">Copyright © 2025 - {{ now.Year }}. All rights reserved.</p>
+
+  </div>
+
+</div>

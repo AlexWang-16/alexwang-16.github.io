@@ -1,48 +1,23 @@
 baseURL = 'https://alexwang.ca/'
-languageCode = 'en-us'
+languageCode = 'en-ca'
 title = 'Alex Wang'
-theme = 'pehtheme-hugo'
 
-summaryLength = '20' # <- 20 words are approximately 160 characters
-googleAnalytics = 'G-MEASUREMENT_ID' # <- Your GA-4
-disqusShortname = 'your-disqus-shortname' # <- Get form here : https://disqus.com
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
 
-[params]
-	# Meta description, not exceeding 160 characters, used for the meta description within the HTML head
-	description = 'Pehtheme Hugo Lite: A minimalist Hugo theme, built with TailwindCSS, for efficient performance and minimalism.'
-	mainSections = 'posts'
+[[menus.main]]
+name = 'Posts'
+pageRef = '/posts'
+weight = 20
 
-[params.author]
-	name = 'Alex Wang'
-	bio = 'A software engineer tinkering with Cloud, Devops, and generative artificial intelligence software who also loves coffee'
-	avatar = '/images/avatar/20240123.jpeg'
-	twitter = 'https://x.com/AlexLHWang'
-
-[pagination]
-	pagerSize = 6 # <- Set the desired number of posts per page
-
-[menu] # Menu management
-	[[menu.main]]
-		name = 'Home'
-		pageRef = '/'
-		weight = 10
-	[[menu.main]]
-		name = 'About'
-		pageRef = '/about'
-		weight = 15
-	[[menu.main]]
-		name = 'Tags'
-		pageRef = '/tags'
-		weight = 20
-	[[menu.main]]
-		name = 'Taxonomy'
-		pageRef = '/tags/space/'
-		weight = 25
+[[menus.main]]
+name = 'Tags'
+pageRef = '/tags'
+weight = 30
 
 [module]
   [module.hugoVersion]
     extended = false
     min = "0.116.0"
-  [module.mounts] # Directing the static folder to assets.
-  	source = 'assets'
-  	target = 'static'
