@@ -5,7 +5,7 @@
 				<svg width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
 					<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
 				</svg>
-				<img style="max-height:40px; max-width: 40px; height:auto; width: auto; padding: 7px 14px 7px 0" src="/images/logo/logo_10062017.png">
+				<img style="max-height:40px; max-width: 40px; height:auto; width: auto; padding: 7px 14px 7px 0" src='{{ "images/logo/logo_10062017.png" | relURL }}' alt="site logo">
 			</button>
 			<div class="relative rounded-full py-1.5 px-6 bg-zinc-100 hover:bg-zinc-200 text-xl font-bold uppercase mx-2">
 				{{ if .IsHome}}<h1><a class="before:content-[''] before:z-10 before:top-0 before:right-0 before:left-0 before:bottom-0 before:absolute before:pointer-events-auto" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
